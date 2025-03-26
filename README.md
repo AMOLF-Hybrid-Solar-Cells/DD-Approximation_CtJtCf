@@ -18,9 +18,6 @@ Make sure that you have the following python packages installed:
 - cython 
 - ipykernel (for the Tutorial)
 
-Open the folder DDApprox in a terminal/console and compile the bernoulli function by running:
-
-`python setup.py build_ext --inplace`
 
 ## Contents
 The code consists of six files: 
@@ -29,16 +26,13 @@ The Device.py file contains the Device class that stores all properties of the p
 2. **Simulation**:
 The Simulation.py file contains the Simulation class that computes the different measurements (capacitance transient, current transient, and capacitance frequency).
 3. **params.py**:
-The params.py file is the file where you define all device and simulation properties. 
+The params.py file is the file where you define all device and simulation properties. Feel free to change the device parameters in this file! 
 4. **cbernoulli.pyx**:
 To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C (see above). 
 5. **setup.py**:
 File that has to be run to compile the cbernoulli.py file  
 5. **Tutorial.ipynb**:  
 The jupyter notebook **Tutorial.ipynb**  provides a guide that explains some of the basic functionality of the approximation. 
-
-## Troubleshooting bernoulli function 
-python setup.py build_ext --inplace
 
 
 **Thanks for your interest in this work :-)**
