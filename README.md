@@ -18,6 +18,10 @@ Make sure that you have the following python packages installed:
 - cython 
 - ipykernel (for the Tutorial)
 
+Open the folder DDApprox in a terminal/console and compile the bernoulli function by running:
+
+`python setup.py build_ext --inplace`
+
 ## Contents
 The code consists of six files: 
 1. **Device**:
@@ -27,7 +31,7 @@ The Simulation.py file contains the Simulation class that computes the different
 3. **params.py**:
 The params.py file is the file where you define all device and simulation properties. 
 4. **cbernoulli.pyx**:
-To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C. If you have cython installed, just follow the first line in the Tutorial
+To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C (see above). 
 5. **setup.py**:
 File that has to be run to compile the cbernoulli.py file  
 5. **Tutorial.ipynb**:  
