@@ -33,8 +33,5 @@ File that has to be run to compile the cbernoulli.py file
 5. **Tutorial.ipynb**:  
 The jupyter notebook **Tutorial.ipynb**  provides a guide that explains some of the basic functionality of the approximation. 
 
-## Troubleshooting bernoulli function 
-python setup.py build_ext --inplace
-
 
 **Thanks for your interest in this work :-)**
