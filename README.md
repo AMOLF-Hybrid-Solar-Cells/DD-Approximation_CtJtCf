@@ -32,7 +32,7 @@ To improve the speed of the simulation we compute the bernoulli function in C. T
 5. **setup.py**:
 File that has to be run to compile the cbernoulli.py file  
 5. **Tutorial.ipynb**:  
-The jupyter notebook **Tutorial.ipynb**  provides a guide that explains some of the basic functionality of the approximation. 
+The jupyter notebook **Tutorial.ipynb**  provides a guide that explains the basic functionality of the approximation. 
 
 
 **Thanks for your interest in this work :-)**
