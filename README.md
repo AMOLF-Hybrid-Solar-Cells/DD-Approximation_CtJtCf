@@ -1,4 +1,4 @@
-# DD-sim approximation to quantify mobile ions in perovskite solar cells
+# Drift-diffusion simulation approximation to quantify mobile ions in perovskite solar cells
 
 This repository contains the code to approximate drift-diffusion simulations of capacitance transient, current transient, and capacitance frequency measurements. The physics of the code is explained in the article xy. If you use the code to quantify mobile ions based on the measurements, please make sure to cite the publication. If you have questions or encounter issues, please email b.ehrler@amolf.nl . 
 
