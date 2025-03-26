@@ -17,7 +17,7 @@ Make sure that you have the following python packages installed:
 - lmfit
 - cython 
 
-## Check files 
+## Contents
 The code consists of six files: 
 1. **Device**:
 The Device.py file contains the Device class that stores all properties of the perovskite solar cell that you simulate. 
@@ -33,4 +33,4 @@ File that has to be run to compile the cbernoulli.py file
 The jupyter notebook **Tutorial.ipynb**  provides a guide that explains some of the basic functionality of the approximation. 
 
 
-**Thanks for your interest in this work :-)**# DD-Approximation_CtJtCf
+**Thanks for your interest in this work :-)**
