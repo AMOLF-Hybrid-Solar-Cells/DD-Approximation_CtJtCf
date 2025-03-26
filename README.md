@@ -16,7 +16,7 @@ Make sure that you have the following python packages installed:
 - pandas
 - lmfit
 - cython 
-(-ipykernel)
+- ipykernel (for the Tutorial)
 
 ## Contents
 The code consists of six files: 
@@ -26,11 +26,11 @@ The Device.py file contains the Device class that stores all properties of the p
 The Simulation.py file contains the Simulation class that computes the different measurements (capacitance transient, current transient, and capacitance frequency).
 3. **params.py**:
 The params.py file is the file where you define all device and simulation properties. 
-4. **cbernoulli.pyx**
+4. **cbernoulli.pyx**:
 To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C. If you have cython installed, just follow the first line in the Tutorial
-5. **setup.py**
+5. **setup.py**:
 File that has to be run to compile the cbernoulli.py file  
-5. **Tutorial.ipynb**  
+5. **Tutorial.ipynb**:  
 The jupyter notebook **Tutorial.ipynb**  provides a guide that explains some of the basic functionality of the approximation. 
 
 
