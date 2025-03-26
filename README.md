@@ -16,6 +16,7 @@ Make sure that you have the following python packages installed:
 - pandas
 - lmfit
 - cython 
+(-ipykernel)
 
 ## Contents
 The code consists of six files: 
