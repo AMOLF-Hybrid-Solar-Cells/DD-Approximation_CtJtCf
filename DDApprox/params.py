@@ -13,8 +13,8 @@ wf_anode = 5.3   # [eV] Work function of anode
 wf_cathode = 4.1  # [eV] Work function of cathode
 
 n0_ion = 1e17 * 100**3  # [1/m^3] Mobile ion density
-ea_dn_ion = 5  # [eV] Activation energy of temperatre activated ion density
-dn_ion = 0 * 100**3  # [1/m^3] Tempearature activated mobile ion density
+ea_dn_ion = 5  # [eV] Activation energy of temperature activated ion density
+dn_ion = 0 * 100**3  # [1/m^3] Temperature activated mobile ion density
 # The ion density at temperature T is then n0_ion + dn_ion*exp(-Ea*e/(kT))
 
 # Activate or deactivate doping in CTLs
@@ -28,9 +28,9 @@ mu_p_htl = 1e-8  # [m^2/Vs] Hole mobility in HTL
 mu_p_pero = 1e-4  # [m^2/Vs] Hole mobility in Perovskite
 mu_p_etl = 1e-8  # [m^2/Vs] Hole mobility in ETL
 
-mu_n_htl = 1e-8  # [m^2/Vs] Hole mobility in HTL [
-mu_n_pero = 1e-4  # [m^2/Vs] Hole mobility in Perovskite
-mu_n_etl = 1e-8  # [m^2/Vs] Hole mobility in ETL
+mu_n_htl = 1e-8  # [m^2/Vs] Electron mobility in HTL 
+mu_n_pero = 1e-4  # [m^2/Vs] Electron mobility in Perovskite
+mu_n_etl = 1e-8  # [m^2/Vs] Electron mobility in ETL
 
 D0_ion = 1e-5 * 100**-2  # [m^2/s] Diffusion coefficient of mobile ions
 ea_ion_mob = 0.3  # [eV] Activation energy of diffusion coefficient of ions
@@ -60,19 +60,19 @@ r_shunt = 1e6  # [Ohm m^2] Shunt resistance
 consider_cations = False
 
 # Settings for Capacitance transient simulations
-freq_ct = 10e3
+freq_ct = 10e3 # [Hz] Frequency of the AC perturbation during capacitance transient simulations
 t_high = 60.0  # [s] Time the high voltage pulse is applied
 vac = 20e-3  # AC perturbation voltage
 vapp = 1.2  # Voltage during pulse
 vlow = 0.0  # Voltage after pulse
-points_early_time = 5
+points_early_time = 5 # Number of points added before the first time step (to ensure correct initial conditions in the case of fast ions)
 start_sim = -8  # Order of magnitude where simulation starts
 
-# S3A for sinusoidal steady state analysis or PP for parallel plate approximation. PP is faster but does not consider reverse and intermediate accumulation (when ions are accumualted at the perovskite/ETL interface). PP also doesn't allow for the calculation of the frequency dependent capacitance. PP can be used when only computing current transients (then the approximation of the capcitance does not matter)
+# S3A for sinusoidal steady state analysis or PP for parallel plate approximation. PP is faster but does not consider reverse and intermediate accumulation (when ions are accumulated at the perovskite/ETL interface). PP also doesn't allow for the calculation of the frequency dependent capacitance. PP can be used when only computing current transients (then the approximation of the capacitance does not matter)
 capacitance_approximation = 'S3A'
 
 ################################################################
-# Grid seetings
+# Grid settings
 ################################################################
 
 # Grid points in perovskite, htl, and etl

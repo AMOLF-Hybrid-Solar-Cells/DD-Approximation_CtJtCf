@@ -15,7 +15,7 @@ The Simulation.py file contains the Simulation class that computes the different
 3. **params.py**:
 The params.py file is the file where you define all device and simulation properties. Feel free to change the device parameters in this file! 
 4. **cbernoulli.pyx**:
-To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C (see above). 
+To improve the speed of the simulation we compute the bernoulli function in C. Therefore, we first have to compile the file **cbernoulli.pyx** into C (see below). 
 5. **setup.py**:
 File that has to be run to compile the cbernoulli.py file  
 5. **Tutorial.ipynb**:  
